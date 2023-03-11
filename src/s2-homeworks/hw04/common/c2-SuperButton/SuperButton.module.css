@@ -1,36 +1,77 @@
-.button {
+.button { 
+    outline: none; 
+    background-color: white;
+    border: 1px black solid;
+    padding: 5px 24px; 
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+    color:white
+
+
 }
 
+
 .disabled {
+    background: rgba(0, 102, 204, 1);
+    color: rgba(0, 46, 92, 1);
+    opacity: 50%;
+
+
 }
 
 .secondary {
+    color:rgba(0, 102, 204, 1);
+    border-color: rgba(0, 102, 204, 1);
+    background-color: white;
 }
 
 .default {
+    background: rgba(0, 102, 204, 1);
+   
+    
 }
 
 .red {
+    background: rgba(204, 20, 57, 1);
+
 }
 
 .default:hover {
+    cursor: pointer;
+    background: rgba(0, 128, 255, 1);
+
 }
 
 .red:hover {
+    cursor: pointer;
+    background: rgba(255, 26, 71, 1);
+
 }
 
 .secondary:hover {
+    cursor: pointer;
+    color: rgba(0, 102, 204, 1);
+    background-color: rgba(229, 240, 250, 1);
 }
 
 
 .default:active {
+    background: rgba(0, 89, 178, 1);
+
 }
 
 .secondary:active {
+    background: rgba(201, 229, 255, 1);
 }
 
 .red:active {
+    background: rgba(178, 18, 50, 1);
+
 }
 
 .button:disabled {
+    background: rgba(0, 77, 153, 1);
+
 }
