@@ -12,11 +12,10 @@ type PropsType = {
 export const Sidebar: FC<PropsType> = ({ open, handleClose }) => {
   const sidebarClass = s.sidebar + (open ? " " + s.open : "");
   let location = useLocation();
-  let juniorClass = location.pathname === PATH.JUNIOR;
-  let preJuniorClass = location.pathname === PATH.PRE_JUNIOR;
+  let juniorClass = location.pathname === PATH.JUNIOR ;
+  let preJuniorClass = location.pathname === PATH.PRE_JUNIOR || location.pathname === "/";
   let juniorPlusClass = location.pathname === PATH.JUNIOR_PLUS;
 
-  console.log( location.pathname === PATH.JUNIOR);
 
   return (
     <>

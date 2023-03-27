@@ -77,7 +77,6 @@ function HW2() {
     const newState = deleteAffair(affairs, _id);
     setAffairs(newState);
   };
-  console.log(affairs);
   return (
     <div id={"hw2"}>
       <div className={s2.hwTitle}>Homework #2</div>
