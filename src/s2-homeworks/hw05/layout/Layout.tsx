@@ -1,5 +1,4 @@
 import React, { FC, ReactNode, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { Header } from "../header/Header";
 import { Sidebar } from "../sidebar/Sidebar";
 
