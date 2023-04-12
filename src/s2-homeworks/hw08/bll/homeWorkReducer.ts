@@ -13,10 +13,10 @@ export const homeWorkReducer = (
     case "sort": {
       return [...state].sort((a, b) =>
         action.payload === "up"
-          ? a.name < b.name
+          ? a.name > b.name
             ? 1
             : -1
-          : a.name > b.name
+          : a.name < b.name
           ? 1
           : -1
       );
